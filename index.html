@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Div Styling Practice</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background: #f0f0f5;
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧱 DIV Styling Practice</h1>
+
+  <section>
+    <h2>1. Basic Box</h2>
+    <div style="background-color: lightblue; padding: 20px;">Hello, I am a box!</div>
+  </section>
+
+  <section>
+    <h2>2. Two Boxes Side by Side</h2>
+    <div style="display: flex; gap: 10px;">
+      <div style="background: salmon; width: 30%; padding: 10px;">Left</div>
+      <div style="background: lightgreen; width: 70%; padding: 10px;">Right</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Center a Div</h2>
+    <div style="width: 200px; margin: 0 auto; background: #ddd; text-align: center;">I’m centered!</div>
+  </section>
+
+  <section>
+    <h2>4. Header & Footer</h2>
+    <div style="background: navy; color: white; padding: 10px;">Header</div>
+    <div style="padding: 20px;">Main Content Here</div>
+    <div style="background: gray; color: white; padding: 10px;">Footer</div>
+  </section>
+
+  <section>
+    <h2>5. Nested Divs</h2>
+    <div style="background: lightgray; padding: 20px; border: 1px solid #aaa;">
+      Outer Div
+      <div style="background: white; padding: 10px; margin-top: 10px; border: 1px solid #aaa;">
+        Inner Div
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Div as Button</h2>
+    <div style="display: inline-block; background: orange; padding: 10px 20px; color: white; cursor: pointer;">
+      Click Me
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Responsive Box</h2>
+    <div style="width: 100%; max-width: 500px; background: #f9f9f9; padding: 20px; margin: auto;">
+      This box adjusts its size!
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Flexbox Layout</h2>
+    <div style="display: flex; justify-content: space-around;">
+      <div style="background: pink; padding: 20px;">Box 1</div>
+      <div style="background: lightblue; padding: 20px;">Box 2</div>
+      <div style="background: lightyellow; padding: 20px;">Box 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>9. Border & Shadow</h2>
+    <div style="border: 2px solid #333; padding: 20px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
+      Stylish Box
+    </div>
+  </section>
+
+  <section>
+    <h2>10. Image Card</h2>
+    <div style="border: 1px solid #ccc; padding: 15px; width: 250px;">
+      <img src="https://via.placeholder.com/200" style="width: 100%;">
+      <h3>Card Title</h3>
+      <p>This is a simple card using a div.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>11. Gradient Background</h2>
+    <div style="padding: 30px; background: linear-gradient(to right, #ff7e5f, #feb47b); color: white;">
+      Beautiful Gradient Background
+    </div>
+  </section>
+
+  <section>
+    <h2>12. Hover Effect</h2>
+    <div style="width: 200px; height: 100px; background: skyblue; transition: 0.3s;"
+         onmouseover="this.style.transform='scale(1.1)'; this.style.background='steelblue';"
+         onmouseout="this.style.transform='scale(1)'; this.style.background='skyblue';">
+      Hover over me!
+    </div>
+  </section>
+
+  <section>
+    <h2>13. Sticky Note</h2>
+    <div style="background: #ffff88; padding: 20px; width: 200px; font-family: cursive; box-shadow: 5px 5px 10px #ccc; transform: rotate(-2deg);">
+      Don’t forget to code today!
+    </div>
+  </section>
+
+  <section>
+    <h2>14. Glassmorphism</h2>
+    <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); padding: 20px; border-radius: 10px; color: white; border: 1px solid rgba(255, 255, 255, 0.3); width: 300px;">
+      Glass-like div effect!
+    </div>
+  </section>
+
+  <section>
+    <h2>15. Collapsible Div</h2>
+    <div onclick="document.getElementById('hidden').style.display='block'" style="cursor: pointer; background: coral; padding: 10px; color: white;">
+      Click to show more...
+    </div>
+    <div id="hidden" style="display: none; padding: 10px; background: lightcoral;">
+      🎉 Surprise! Here's some hidden content.
+    </div>
+  </section>
+
+  <section>
+    <h2>16. Responsive Grid</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px;">
+      <div style="background: lavender; padding: 20px;">1</div>
+      <div style="background: lavender; padding: 20px;">2</div>
+      <div style="background: lavender; padding: 20px;">3</div>
+      <div style="background: lavender; padding: 20px;">4</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>17. Color Palette</h2>
+    <div style="display: flex; gap: 5px;">
+      <div style="width: 50px; height: 50px; background: #ff6b6b;"></div>
+      <div style="width: 50px; height: 50px; background: #feca57;"></div>
+      <div style="width: 50px; height: 50px; background: #1dd1a1;"></div>
+      <div style="width: 50px; height: 50px; background: #54a0ff;"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>18. Badge/Label</h2>
+    <div style="display: inline-block; background: crimson; color: white; padding: 5px 10px; border-radius: 50px;">
+      New!
+    </div>
+  </section>
+
+  <section>
+    <h2>19. Notification Card</h2>
+    <div style="max-width: 300px; padding: 15px; background: #fff3cd; border: 1px solid #ffeeba; border-radius: 10px;">
+      <strong>⚠️ Alert:</strong> You have 2 unread messages.
+    </div>
+  </section>
+
+  <section>
+    <h2>20. Chat Bubble</h2>
+    <div style="max-width: 250px; background: #e0f7fa; padding: 10px 15px; border-radius: 20px; margin: 10px 0;">
+      Hello! This is a chat message.
+    </div>
+  </section>
+
+</body>
+</html>
